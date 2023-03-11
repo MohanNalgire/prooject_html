@@ -16,152 +16,31 @@
 </head>
 
 <body>
-    <h1> We are trying to show following table</h1>
-    <pre>
-        https://www.rapidtables.com/web/color/RGB_Color.html
-    </pre>
 
-    <h1>Basic Table structure</h1>
-    <table>
-        <tr>
-            <td>heading 1</td>
-            <td>heading 2</td>
-            <td>heading 3</td>
-            <td>heading 4</td>
-            <td>heading 5</td>
-            <td>heading 6</td>
-        </tr>
-        <tr>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-        </tr>
-    </table>
-    <pre>
-Here we ignored following table tags:
-1   caption
-2   thead
-3   tbody
-4   tfoot
-5   th
-6   colgroup
-</pre>
+    <dl>
+        <dt>What is a container tag ?</dt>
+        <dd>The tags which starts with start tag and which contain
+            other tags or not and ends with end tag are known as container tag
+            syntax:
+            <start_tag></start_tag> or
+            <start_tag>
+                <!--- 
+                    other sub tags of flow
+                -->
+            </start_tag>
 
-    <H1>Table tags with html5 new tags</H1>
-    <table>
-        <caption>Council budget (in £) 2018</caption>
-        <thead>
-            <tr>
-                <th>Items</th>
-                <th scope="col">Expenditure</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Donuts</th>
-                <td>3,000</td>
-            </tr>
-            <tr>
-                <th scope="row">Stationery</th>
-                <td>18,000</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h1>Table tag with deprecated attributes</h1>
-    <pre>
-    1   align
-    2   border
-    3   width
-    4   bgcolor
 
-</pre>
-    <table border="1">
-        <caption>color name and values</caption>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>HEX</th>
-                <th>HSLa</th>
-                <th>RGBa</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Teal</td>
-                <td>#51F6F6</td>
-                <td>hsl(180 90% 64% /1)</td>
-                <td>rgb(246 188 87 / 1)</td>
-            </tr>
-        </tbody>
-    </table>
-<hr>
-    <pre>
-        We have 5 columns
-        1 we want to show one colum with main title heading
-    </pre>
-    <h1>Table - using colgroup tab</h1>
-    <table>
-        <caption> Test of colgroup tag </caption>
-        <colgroup>
-            <col>
-            <col span="2">
-            <col span="2">
-        </colgroup>
-        <tr>
-            <th></th>
-            <th>first column</th>
-            <th>Second column</th>
-            <th>Third column</th>
-            <th>Fourth column</th>
-        </tr>
-        <tr>
-            <th scope="row">value</th>
-            <td>col 1 value</td>
-            <td>col 2 value</td>
-            <td>col 3 value</td>
-            <td>col 4 value</td>
-        </tr>
-    </table>
-<hr>
-    <h1>Table - without using colgroup tag </h1>
-    <table>
-        <caption> Maarksheet</caption>
-        <tr>
-            <th></th>
-            <th>sub1</th>
-            <th>sub2</th>
-            <th>sub3</th>
-            <th>sub4</th>
-            <th>sub5</th>
-            <th>sub6</th>
-            <th>sub7</th>
-        </tr>
-        <tr>
-            <td>Subjet Name</td>
-            <td>Marathi</td>
-            <td>Hindi</td>
-            <td>English</td>
-            <td>Math</td>
-            <td>Science</td>
-            <td>History</td>
-            <td>Georaphy</td>
-        </tr>
-        <tr>
-            <td>Mark</td>
-            <td>90</td>
-            <td>80</td>
-            <td>85</td>
-            <td>90</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-        </tr>
-    </table>
+            example:
+            <table>
+                <caption>To show table name</caption>
+                
+            </table>
 
+
+
+
+        </dd>
+    </dl>
 </body>
 
 </html>

@@ -33,12 +33,82 @@
             example:
             <table>
                 <caption>To show table name</caption>
-                
+                <colgroup>
+                <col>
+                </colgroup>
+            </table>
+<!------------------------------ colspan example ------------------------------>
+
+            <table>
+                <caption>Colspan example</caption>
+                <tr>
+                    <th colspan="2" style="border:2px solid green;">row 1 column 1 and 2 </th>
+                    <th>row 1 column 3</th>
+                    <th>row 1 column 4</th>
+                    <th>row 1 column 5</th>
+                </tr>
+                <tr>
+                    <td>row 2 column 1 </td>
+                    <td>row 2 column 2 </td>
+                    <td>row 2 column 3 </td>
+                    <td>row 2 column 4 </td>
+                    <td>row 2 column 5 </td>
+                </tr>
+                <tr>
+                    <td>row 3 column 1 </td>
+                    <td>row 3 column 2 </td>
+                    <td>row 3 column 3 </td>
+                    <td>row 3 column 4 </td>
+                    <td>row 3 column 5 </td>
+                </tr>
+                <tr>
+                    <td>row 4 column 1 </td>
+                    <td>row 4 column 2 </td>
+                    <td>row 4 column 3 </td>
+                    <td>row 4 column 4 </td>
+                    <td>row 4 column 5 </td>
+                </tr>
             </table>
 
-
-
-
+<!--------------------   Rowspan example     --------------------------------->
+            <table>
+                <caption>Rowspan example</caption>
+                <tr><!-- row 1 -->
+                    <th>row 1 column 1</th>
+                    <th>row 1 column 2</th>
+                    <th>row 1 column 3</th>
+                </tr>
+                <tr><!-- row 2-->
+                    <td>row 2 column 1</td>
+                    <td>row 2 column 2</td>
+                    <td>row 2 column 3</td>
+                </tr>
+                <tr><!-- row 3 -->
+                    <td>row 3 column 1</td>
+                    <td>row 3 column 2</td>
+                    <td>row 3 column 3</td>
+                </tr>
+                <tr><!-- row 4 -->
+                    <td rowspan="2" style="border:2px solid blue;">row 4 column 1</td>
+                    <td>row 4 column 2</td>
+                    <td>row 4 column 3</td>
+                </tr>
+                <tr><!-- row 5 -->
+                    <td>row 5 column 2</td>
+                    <td>row 5 column 3</td>
+                </tr>
+            </table>
+<!----------------------   table data grouping tags --------------------------->
+        <table>
+            <!-- column grouping tag to perform column related operations on multiple columns -->
+            <colgroup></colgroup>
+            <!--- header grouping tag -->
+            <thead></thead>
+            <!-- body grouping tag -->
+            <tbody></tbody>
+            <!-- foooter grouping tag -->
+            <tfoot></tfoot>
+        </table>
         </dd>
     </dl>
 </body>

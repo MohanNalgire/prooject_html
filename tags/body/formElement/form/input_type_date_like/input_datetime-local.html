@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Birday form with date and time</h1>
+    <form action="http://localhost:8080/nodeServer" method="post" >
+        <label for="bday" >Birthday with time</label>
+        <!---
+        Attribute and value format
+        value="YYYY-MM-DDThh:mm"
+        
+        
+        Attribute for validation
+        1) min="YYYY-MM-DDThh:mm"
+        2) max="YYYY-MM-DDThh:mm"
+        3) pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}"
+        4) required
+        5) readonly
+
+        -->
+        <input 
+            type="datetime-local"
+            name="birthday"
+            id="bday"
+            min="2001-01-01T12:00"
+            max="2005-01-01T12:00"
+            value="2005-01-01T12:00"
+            pattern="\d{4}-\d{2}-\d{2}T[0-9]{2}:[0-9]{2}"
+            required
+
+        /><br><br>
+        <input type="submit" value="Submit" />
+    </form> 
+
+</body>
+</html>

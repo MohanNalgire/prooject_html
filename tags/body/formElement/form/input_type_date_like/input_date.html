@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Birthday form</h1>
+    <form action="http://localhost:8080/nodeServer" method="get">
+      <label for="bday"> Enter your Birthday date</label>
+      <!--
+            With <input type="date" /> we can select only following things
+            1) Date
+            2) month
+            3) year
+            We can't select 
+            1) time 
+            2) time-zone
+
+            validation attributes:
+            1) pattern => "yyyy-mm-dd"
+            2) required => You need to submit value for this field
+            3) readonly => you can't change value of this field
+
+        -->
+      <input
+        type="date"
+        name="birthday"
+        id="bday"
+        min="2001-01-01"
+        max="2005-01-01"
+        value="2001-03-24"
+        pattern="\d{4}-\d{2}-\d{2}" 
+        required
+        
+      />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

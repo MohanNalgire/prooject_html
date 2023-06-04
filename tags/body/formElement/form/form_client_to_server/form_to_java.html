@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost/phpServer/index.java" method="get" >
+        <label for="search_box" >User Name</label>
+        <input type="text" name="user_name" id="user_name" value="" >
+        <!-- 
+            The "for" attribute of label tag specifies which form elment a label is bound to; 
+            the relation is achived by adding same name to "id" attribute in the form element.
+        -->
+        <br>
+        <br>
+        <!--
+            We can also write like this to avoid writting many things for form.
+            This is also helpful for writting radio buttons.
+            But providing <label> with for="" and form elment with id="" is always good 
+             to avoid cunfusion and manintaing style guide. 
+        --> 
+        <label>
+            User Password<input type="text" name="user_password" id="user_password" value="" >
+        </label>
+        <br>
+        <br>
+        <button type="submit" value="submit">submit</button>
+    </form>
+</body>
+</html>

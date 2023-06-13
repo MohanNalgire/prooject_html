@@ -1,0 +1,42 @@
+body {}
+
+body>main {
+    /*   
+    1.  margin: top_value right_value bottom_value left_value;
+        example:
+        1) margin:100px 200px 300px 400px; 
+
+    2.  margin: top&bottom left&right;
+        example:
+            1) margin:auto 300px;
+            2) margin:100px 300px;
+        this will asign 100px to top&bottom and 300px to right&left
+
+    3.  margin:margin_value;
+        example:
+            margin:100px; 
+        this will asign value to all 4 direction margin
+    */
+    margin: auto 300px;
+    padding: 30px;
+    background-color: lightsteelblue;
+    text-align: justify;
+}
+
+main>h1 {
+    background: fixed;
+}
+
+article>ul {
+    columns: 20em 2;
+}
+
+ul {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+li::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}

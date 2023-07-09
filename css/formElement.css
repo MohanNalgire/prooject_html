@@ -1,0 +1,48 @@
+input[type="button"],
+input[type='submit'],
+input[type='reset'] {
+    width: 32%;
+    border: 1px solid #f5f3f3;
+    border-radius: 5px;
+    height: 30px;
+}
+
+input[type='button'] {
+    background-color: #dae0e5;
+    color: black;
+}
+
+input[type='reset'] {
+    background-color: #dc3545;
+    color: whitesmoke;
+}
+input[type='submit'] {
+    background-color: #86bd33;
+    color: whitesmoke;
+}
+
+/* Form Element */
+form{
+    margin: auto auto;
+    width: 400px;
+}
+fieldset{
+    border-radius: 5px;
+}
+form, fieldset {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+div>label {
+    width: 26%;
+    display: inline-block;
+}
+
+div>input {
+    width: 60%;
+}
+p{
+    font-size:8px;
+}

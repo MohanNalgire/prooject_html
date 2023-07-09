@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../css/formElement.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form action="http://localhost/phpServer/index.php" method="post">
+        <fieldset>
+            <legend>Name Details</legend>
+            <div>
+                <Label for="firstName">First Name</Label>
+                <input type="text" name="first_name" id="firstName">
+            </div>
+            <div>
+                <Label for="lastName">Last Name</Label>
+                <input type="text" name="last_name" id="lastName">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Gender Details</legend>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Skin color </legend>
+            <input type="color" name="skin_color" value="#e9ddb7">
+        </fieldset>
+        <fieldset>
+            <legend>Birth Details</legend>
+            <div>
+                <label for="birthDate">Birth Date</label>
+                <input type="date" name="birth_date" id="birthDate" min="1980-01-01" max="1990-01-01">
+            </div>
+
+            <div>
+                <label for="birthTime">birthTime</label>
+                <input type="time" name="birth_time" id="birthTime">
+            </div>
+
+            <div>
+                <label for="birthDateTime">Birth Date with Time</label>
+                <input type="datetime-local" name="birth_date_time" id="birthDateTime">
+            </div>
+
+            <div>
+                <label for="birthMonth">Birth Month</label>
+                <input type="month" name="birth_month" id="birthMonth">
+            </div>
+
+            <div>
+                <label for="birthWeek">Birth Week</label>
+                <input type="week" name="birth_week" id="birthWeek">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> Contact Details</legend>
+            <div>
+                <label for="email">Email Id</label>
+                <input type="email" id="email_id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your email id" title="follow standard email id format">
+            </div>
+            <div>
+                <label for="mobile_number" > Mobile number</label>
+                <input type="number" id="mobile_number" pattern="[6-9]\d{3}-[]" >
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Create Your Password</legend>
+            <p>Length shouldbe more than 8 characters and lessthan 16 characters,
+                 should include 1 captil character, 
+                 1 small character, 
+                 1 special symbol and 1 numerical character
+                </p>
+            <div>
+                <label>New Password</label>
+                <input type="password" minlength="8" maxlength="16"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" 
+                placeholder="Set your new password"
+                >
+            </div>
+            <div>
+                <label>Confirm Password</label>
+                <input type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"
+                placeholder="Confirm your new password">
+            </div>
+        </fieldset>
+        <div>
+            <input type="button" value="cancel">
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>

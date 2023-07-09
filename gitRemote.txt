@@ -1,0 +1,14 @@
+what we will learn
+
+1. to delete a remote branch
+2. cleaning deleted remote branches from the local
+3. updating from the upstream repository
+4. listing remote without cloning 
+5. setting upstream on new branch
+6. pushing to a remote branch
+7. verifying remote URL
+
+Consider 
+1. We have created some development task related branches on remote with functionality definition.
+2. Other developer delete those branches from git service provider in our case github.
+3. Now we want to delete those branches from the local refereces also.
